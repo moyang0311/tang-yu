@@ -1,0 +1,63 @@
+.conleft .right #forum{
+    width: 100%;
+    height: auto;
+    margin-top:10px ;
+    position: relative;
+}
+.conleft .right #forum input{
+    width: 90%;
+    outline: none;
+    border: 0;
+    height: 50px;
+    font-size: 25px;
+}
+.add{
+    width: 9%;
+    height: 50px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: -1px;
+}
+#forum ul{
+    width: 100%;
+    height: auto;
+}
+#forum ul li{
+    width: 100%;
+    height: 200px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow:0 0 10px rgb(170,170,170);
+    margin: 20px 0 ;
+    border-radius:20px ;
+    position: relative;
+}
+#forum ul li div{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: orange;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.del{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    outline: none;
+    border: none;
+    background: url(../img/error.png);
+    background-size: 20px 20px;
+}

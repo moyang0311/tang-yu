@@ -1,0 +1,55 @@
+.topHeader{
+    width: 100%;
+    height:50px;
+    /* background: rgb(0, 123, 255); */
+    transition: top .5s linear;
+    position: fixed;
+    top: -100px;
+    left: 0;
+}/* 头部样式 */
+.topHeader img{
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    margin-left: 50px;
+}/* 头部logo */
+.topHeader .yhxinxi{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 20px;
+}/* 头部用户信息盒子 */
+.topHeader .yhxinxi .touxiang{
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background: url(../img/头像.jpg) ;
+    background-size: 35px 35px;
+}/* 用户信息头像 */
+.topHeader.yhxinxi a{
+    text-decoration: none;
+    color: #000;
+}/* 用户信息id */
+
+.backTop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background: rgb(237, 211, 211);
+    display: none;
+    font-size:18px;
+    text-align: center;
+    line-height: 25px;
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 189, 189);
+    border-radius: 10px;
+    box-shadow:0 0 10px rgb(250, 186, 186);
+}

@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/text.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/myself.css">
+    <link rel="stylesheet" href="./css/conleft-search.css">
+    <link rel="stylesheet" href="./css/forum.css">
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="stylesheet" href="./css/backtop.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <script src="./lib/vue.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="">
+        <div class="search">
+            <input type="text" value="看你想看....">
+            <input type="submit" value="立马查看">
+        </div>
+        <div class="yhxinxi">
+            <div class="touxiang"></div>
+            <a href="">moyang0311</a>
+        </div>
+    </header>
+    <div class="topHeader">
+        <img src="./img/logo.png" alt="">
+        <div class="yhxinxi">
+            <div class="touxiang"></div>
+            <a href="">moyang0311</a>
+        </div>
+    </div>
+    <div class="nav" id="box">
+        <ul>
+            <li class="active">
+                <a href="./text.html">首页</a>
+            </li>
+            <li>
+                <a href="./展示.html">展示</a>
+            </li>
+            <li>
+                <a href="./我的.html">我的</a>
+            </li>
+            <li>
+                <a href="./好友.html">好友</a>
+            </li>
+            <li>
+                <a href="./兴趣.html">兴趣</a>
+            </li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="conleft">
+            <div class="left">
+                <div class="myself">
+                    <div></div>
+                    <ul>
+                        <li>Name：雾鸦</li>
+                        <li>性别：男</li>
+                        <li>QQ：2733660740</li>
+                        <li>微信：My2733660740</li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" value="墨阳乱开腔">
+                </div>
+            </div>
+            <div class="right">
+                <div class="banner">
+                    <ul>
+                        <li class="active"><img src="./img/1.jpg" alt=""></li>
+                        <li><img src="./img/2.jpg" alt=""></li>
+                        <li><img src="./img/3.jpg" alt=""></li>
+                        <li><img src="./img/4.jpg" alt=""></li>
+                        <li><img src="./img/5.jpg" alt=""></li>
+                    </ul>
+                    <div class="bleft">&lt;</div>
+                    <div class="bright">&gt;</div>
+                </div>
+                <div id="forum">
+                    <input type="text" v-model="mytext">
+                    <button @click="handleAdd" class="add">add</button>
+                    <ul v-show="datalist.length">
+                        <li v-for="(data,index) in datalist">
+                            <div>留言板</div>
+                            {{data}}
+                            <button @click="handleDel(index)" class="del"></button>
+                        </li>
+                    </ul>
+                    <!-- <div v-show="!datalish.length">无话可说</div> -->
+                </div>
+            </div>
+        </div>
+        <div class="conright">
+            <div class="game">
+                <img src="./img/1.png" alt="">
+                <span>Assassin's Cread</span>
+                <span> Odyssey</span>
+            </div>
+            <div class="game">
+                <img src="./img/2.png" alt="">
+                <span>Cyberpunk</span>
+                <span> 2077</span>
+            </div>
+            <div class="game">
+                <img src="./img/3.png" alt="">
+                <span>The Witcher Ⅲ</span>
+                <span> Wild Hunt</span>
+            </div>
+            <div class="game">
+                <img src="./img/4.png" alt="">
+                <span>NIOH  </span>
+                <span>仁王2</span>
+            </div>
+            <div class="game">
+                <img src="./img/5.png" alt="">
+                <span>APEX</span>
+                <span> LEGENDS</span>
+            </div>
+            <div class="game">
+                <img src="./img/6.png" alt="">
+                <span>Seciro</span>
+                <span> Shadows Die Twice</span>
+            </div>
+        </div>
+    </div>
+    <div class="backTop">回到顶部</div>
+    <footer></footer>
+
+
+    <script src="./text.js/轮播图.js"></script>
+    <script src="./text.js/回到顶部.js"></script>
+    <script src="./text.js/forum添加.js"></script>
+</body> 
+</html>

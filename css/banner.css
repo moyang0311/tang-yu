@@ -1,0 +1,49 @@
+.conleft .banner{
+    width: 100%;
+    height: 243px;
+    background-color: #FFF;
+    box-shadow:0 0 10px rgb(170,170,170);
+    position: relative;
+}/* 右部分中的banner */
+.banner img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}/* banner中的图片部分 */
+.banner ul{
+    width: 100%;
+    position: relative;
+}/* banner中的ul列表 */
+.banner li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s linear ;
+}/* banner中的li列表 */
+.banner ul li.active{
+    opacity: 1;
+}/* 默认显示命名 */
+.banner div{
+    width: 20px;
+    height: 40px;
+    background: rgba(0,0,0,0.25);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFF;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}/* banner中左右点击盒子 */
+.banner .bleft{
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    left: 0;
+}/* 左盒子定位 */
+.banner .bright{
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    right: 0;
+}/* 右盒子定位 */

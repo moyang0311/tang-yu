@@ -1,0 +1,37 @@
+.conleft .myself{
+    width: 100%;
+    height: 200px;
+    background:url(../img//未点击单元块.png);
+    background-size: 100% 200px;
+    /* box-shadow:0 0 10px rgb(170,170,170); */
+    position: relative;
+}/* 左部分中的个人中心 */
+.myself:hover{
+    background: url(../img/鼠标预览单元块.png);
+    background-size: 100% 200px;
+}
+.myself div{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/头像.jpg);
+    background-size: 40px 40px;
+    border-radius: 10px;
+}
+
+.myself ul{
+    margin-left: 20px;
+    font-size: 12px;
+    width: auto;
+    position: absolute;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.myself ul li{
+    height: 20px;
+    color: #000;
+    font-weight: 700;
+}
